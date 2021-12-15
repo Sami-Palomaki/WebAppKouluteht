@@ -22,7 +22,7 @@ namespace WebAppTietokantasovellus.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Yhteystiedot.";
 
             return View();
         }
