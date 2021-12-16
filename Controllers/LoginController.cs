@@ -30,7 +30,7 @@ namespace WebAppTietokantasovellus.Controllers
             else
             {
                 ViewBag.LoginMessage = "Login unsuccessfull";
-                LoginModel.LoginErrorMessage = "Tuntematon käyttäjätunnus tai salasana.";
+                //LoginModel.LoginErrorMessage = "Tuntematon käyttäjätunnus tai salasana.";
 
                 return View("Index", LoginModel);
             }

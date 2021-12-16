@@ -11,6 +11,7 @@ namespace WebAppTietokantasovellus.Controllers
     public class ShippersController : Controller
     {
         // GET: Shippers
+        NorthwindEntities db = new NorthwindEntities();
         public ActionResult Index()
         {
             if (Session["UserName"] == null)
