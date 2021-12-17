@@ -47,6 +47,11 @@ namespace WebAppTietokantasovellus.Controllers
             }
         }
 
+        public ActionResult Login()
+        {
+            return View();
+        }
+
         [HttpPost]
         public ActionResult Authorize(Logins LoginModel)
         {
@@ -64,7 +69,7 @@ namespace WebAppTietokantasovellus.Controllers
             {
                 ViewBag.LoginMessage = "Login unsuccessfull";
                 ViewBag.LoggedStatus = "Out";
-                //LoginModel.LoginErrorMessage = "Tuntematon käyttäjätunnus tai salasana.";
+                LoginModel.LoginErrorMessage = "Tuntematon käyttäjätunnus tai salasana.";
                 return View("Login", LoginModel);
             }
         }

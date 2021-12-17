@@ -31,7 +31,7 @@ namespace WebAppTietokantasovellus.Controllers
             if (id == null) return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             Shippers shippers = db.Shippers.Find(id);
             if (shippers == null) return HttpNotFound();    // Jos ei löydy, palautetaan HttpNotFound
-            //ViewBag.RegionID = new SelectList(db.Region, "RegionID", "RegionDescription", shippers.RegionID);
+            ViewBag.RegionID = new SelectList(db.Region, "RegionID", "RegionDescription", shippers.RegionID);
             return View(shippers);                          // Jos löytyy palautetaan näkymä
         }
 

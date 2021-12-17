@@ -17,5 +17,6 @@ namespace WebAppTietokantasovellus
         public int LoginId { get; set; }
         public string UserName { get; set; }
         public string PassWord { get; set; }
+        public string LoginErrorMessage { get; set; }
     }
 }

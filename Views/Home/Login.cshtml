@@ -25,9 +25,9 @@
                 @Html.ValidationMessageFor(model => model.PassWord, "", new { @class = "text-danger" })
             </div>
         </div>
-        <label class="field-validation-error">
+        @*<label class="field-validation-error">
             @Html.DisplayFor(model => model.LoginErrorMessage)
-        </label>
+        </label>*@
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
                 <input type="submit" value="Log" class="btn btn-success" />
